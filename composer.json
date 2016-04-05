@@ -1,0 +1,48 @@
+{
+    "name": "mbamarante/cakephp-firebird-driver",
+    "description": "CakePHP 3 Driver for Firebird Database",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "firebird",
+        "database",
+        "driver"
+    ],
+    "homepage": "https://github.com/mbamarante/cakephp-firebird-driver",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maicon Amarante",
+            "homepage": "https://twitter.com/mbamarante/",
+            "role": "Author"
+        },
+        {
+            "name": "Others",
+            "homepage": "https://github.com/mbamarante/cakephp-firebird-driver/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mbamarante/cakephp-firebird-driver/issues",
+        "source": "https://github.com/mbamarante/cakephp-firebird-driver"
+    },
+    "config": {
+        "preferred-install": "src"
+    },
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CakephpFirebird\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CakephpFirebird\\Test\\": "tests"
+        }
+    }
+}

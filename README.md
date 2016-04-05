@@ -12,12 +12,6 @@ The recommended way to install composer packages is:
 composer require mbamarante/cakephp-firebird-driver
 ```
 
-In bootstrap.php load plugin.
-
-```
-Plugin::load('mbamarante/cakephp-firebird-driver');
-```
-
 ## Requirements
 
 - CakePHP 3.2+

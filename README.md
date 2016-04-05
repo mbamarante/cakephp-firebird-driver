@@ -9,13 +9,13 @@ You can install this plugin into your CakePHP application using [composer](http:
 The recommended way to install composer packages is:
 
 ```
-composer require mbamarante/cakephp-firebird
+composer require mbamarante/cakephp-firebird-driver
 ```
 
 In bootstrap.php load plugin.
 
 ```
-Plugin::load('mbamarante/cakephp-firebird');
+Plugin::load('mbamarante/cakephp-firebird-driver');
 ```
 
 ## Requirements

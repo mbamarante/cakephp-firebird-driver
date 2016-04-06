@@ -33,3 +33,15 @@ Here is an example datasource configuration:
     'database' => '/path-to-database/database.fdb',
     ]
 ```
+
+## Known Issues
+
+- disable multiple records insert in the same query (e.g.: fixtures)
+- disable auto increment fields on table creation
+- review data types
+- improve unit tests
+- unimplemented add and dropContraints, enable and disableForeignFeySQL
+
+## Workaround
+
+- use cake bake lowercase table name

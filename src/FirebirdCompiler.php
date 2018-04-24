@@ -51,7 +51,7 @@ class FirebirdCompiler extends QueryCompiler
      */
     protected function _buildSelectPart($parts, $query, $generator)
     {
-        $driver = $query->connection()->driver();
+        $driver = $query->getConnection()->getDriver();
         $select = 'SELECT %s%s%s';
         if ($this->_orderedUnion && $query->clause('union')) {
             $select = '(SELECT %s%s%s';

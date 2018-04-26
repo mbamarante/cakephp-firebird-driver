@@ -70,7 +70,7 @@ class QueryTest extends TestCase
     {
         $query = $this->Articles->find('all');
         $this->assertInstanceOf('Cake\ORM\Query', $query);
-        $result = $query->hydrate(false)->toArray();
+        $result = $query->enableHydration(false)->toArray();
         $expected = [
             ['id' => 1, 'author_id' => 1, 'title' => 'First Article', 'body' => 'First Article Body', 'published' => 'Y'],
         ];

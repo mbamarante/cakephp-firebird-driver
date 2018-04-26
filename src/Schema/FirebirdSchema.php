@@ -285,7 +285,7 @@ class FirebirdSchema extends BaseSchema
      */
     public function columnSql(Table $table, $name)
     {
-        $data = $table->column($name);
+        $data = $table->getColumn($name);
         $out = $this->_driver->quoteIdentifier($name);
         $typeMap = [
             'integer' => ' INTEGER',
@@ -380,7 +380,7 @@ class FirebirdSchema extends BaseSchema
      */
     public function constraintSql(Table $table, $name)
     {
-        $data = $table->constraint($name);
+        $data = $table->getConstraint($name);
         if ($data['type'] === Table::CONSTRAINT_PRIMARY) {
             return sprintf('CONSTRAINT pk_%s_0 PRIMARY KEY ("%s")', $table->name(), implode(', ', $data['columns']));
         }
